@@ -46,11 +46,11 @@ Read report ./website/final_report.pdf and run code in ./website/code.
 
 ### Search Page
 
-![search for title](pic/search0.png)
+![search for title](pic/search0.PNG)
 
-![search for author](pic/author.png)
+![search for author](pic/author.PNG)
 
-![search for conference](pic/reference.png)
+![search for conference](pic/reference.PNG)
 
 ### Detail Page
 
