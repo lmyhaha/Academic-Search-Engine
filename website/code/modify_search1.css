@@ -1,0 +1,50 @@
+	.pagination {
+	margin: 0;
+	padding: 0;
+	font-size: 12px;
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	}
+
+	.pagination a, .pagination a:link, .pagination a:visited {
+	margin: 0 5px 0 0;
+	padding: 2px 5px 2px 5px;
+	border: 1px solid #aaaadd;
+	color: #006699;
+	text-decoration: none;
+	}
+
+	.pagination span.curr_page {
+	margin: 0 5px 0 0;
+	padding: 2px 5px 2px 5px;
+	font-weight: bold;
+	color: #ffffff;
+	border: 1px solid #006699;
+	background-color: #006699;
+	}
+
+	.pagination a:hover, .pagination a:active {
+	border: 1px solid #006699;
+	color: #000000;
+	background-color: #3399FF;
+	}
+
+	.pagination span.elli_page {
+	margin: 0 5px 0 0;
+	padding: 2px 5px 2px 5px;
+	}
+	.pagination {display: inline;font-size: 15px;}
+	.pagination a.cur{
+	background-color:#3399FF;
+	color: #000000;
+	border:  1px solid #006699;
+	}
+	body {
+		text-align: center;
+	}
+	/*home按钮*/
+.spinningeffect img {
+transition: all 0.8s ease-in-out;
+}
+.spinningeffect img:hover {
+transform: rotate(360deg);
+}

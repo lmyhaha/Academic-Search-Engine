@@ -1,0 +1,93 @@
+.link {
+	outline: none;
+	text-decoration: none;
+	position: relative;
+	font-size: 8em;
+	line-height: 1;
+	color: #9e9ba4;
+	display: inline-block;
+}
+
+.link--kukuri {
+	text-transform: uppercase;
+	font-weight: 900;
+	overflow: hidden;
+	line-height: 0.75;
+	color: #c5c2b8;
+}
+
+.link--kukuri:hover {
+	color: #c5c2b8;
+}
+
+.link--kukuri::after {
+	content: '';
+	position: absolute;
+	height: 16px;
+	width: 100%;
+	top: 50%;
+	margin-top: -8px;
+	right: 0;
+	background: #F9F9F9;
+	-webkit-transform: translate3d(-100%,0,0);
+	transform: translate3d(-100%,0,0);
+	-webkit-transition: -webkit-transform 0.4s;
+	transition: transform 0.4s;
+	-webkit-transition-timing-function: cubic-bezier(0.7,0,0.3,1);
+	transition-timing-function: cubic-bezier(0.7,0,0.3,1);
+}
+
+.link--kukuri:hover::after {
+	-webkit-transform: translate3d(100%,0,0);
+	transform: translate3d(100%,0,0);
+}
+
+.link--kukuri::before {
+	content: attr(data-letters);
+	position: absolute;
+	z-index: 2;
+	overflow: hidden;
+	color: #424242;
+	white-space: nowrap;
+	width: 0%;
+	-webkit-transition: width 0.4s 0.3s;
+	transition: width 0.4s 0.3s;
+}
+
+.link--kukuri:hover::before {
+	width: 100%;
+}
+table {
+	font-size: 20px;
+	background-color: rgba(255,255,240,0.5);
+}
+tr,td {
+	padding: 1.25em;
+    border-bottom: 1px solid #ddd;
+    border-top: 1px solid #ddd;
+    text-align: center;
+}
+tr:hover {
+    background: linear-gradient(#00FFFF, #F8F8FF);
+}
+
+<?php
+ini_set('max_execution_time', '100');
+echo "<table>";
+
+echo "<tr>";
+echo "<td width=\"30%\">"; echo 'Title'; echo "</td>";
+echo "<td>"; echo 'this is a test title this is a test title this is a test title this is a test title this is a test title'; echo "</td>";
+echo "</tr>";
+
+echo "<tr>";
+echo "<td>"; echo 'Publish year'; echo "</td>";
+echo "<td>"; echo '2019'; echo "</td>";
+echo "</tr>";
+
+echo "<tr>";
+echo "<td>"; echo 'Affiliation'; echo "</td>";
+echo "<td>"; echo 'sjtu'; echo "</td>";
+
+echo "</table>";
+?>
